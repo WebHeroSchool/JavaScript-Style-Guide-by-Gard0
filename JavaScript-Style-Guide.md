@@ -1,7 +1,6 @@
 # JavaScript-Style-Guide-by-Gard0
 
 # Советы по стилю кода JS
----
 
 ## Главное
 
