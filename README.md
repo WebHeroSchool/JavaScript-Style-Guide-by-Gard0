@@ -8,7 +8,7 @@
 
 ## Синтаксис
 
-#### Шпаргалка с правилами синтаксиса:
+#### Шпаргалка с правилами синтаксиса
 
 * [Learn.javascript.ru](https://learn.javascript.ru/coding-style#sintaksis)
 
@@ -26,9 +26,9 @@
  
  ## Длина строки
  
- #### Никто не любит читать длинные горизонтальные строки кода. 
+ #### Никто не любит читать длинные горизонтальные строки кода
  
- ##### Лучше так:
+ ##### Лучше так
  
 ```javascript
 // обратные кавычки ` позволяют разделять строку на части
@@ -39,7 +39,7 @@ let str = `
 `;
 ```
 
- ##### Или так:
+ ##### Или так
  
 ```javascript
 if (
@@ -59,7 +59,7 @@ if (
 
 ## Уровни вложенности
 
-#### Уровней вложенности должно быть немного.
+#### Уровней вложенности должно быть немного
 
 ```javascript
 for (let i = 0; i < 10; i++) {
@@ -68,3 +68,38 @@ for (let i = 0; i < 10; i++) {
 }
 ```
 
+## Размещение функций
+
+#### Сначала код, затем функции
+
+* При чтении кода мы сначала хотим знать, что он делает. Если сначала идёт код, то это тут же становится понятно.
+
+```javascript
+// код, использующий функции
+let elem = createElement();
+setHandler(elem);
+walkAround();
+
+// --- вспомогательные функции ---
+function createElement() {
+  ...
+}
+
+function setHandler(elem) {
+  ...
+}
+
+function walkAround() {
+  ...
+}
+```
+
+## Руководства по стилю кода
+
+#### Используй опыт других разработчиков. Вот пример
+
+* [Google JavaScript Style Guide](https://google.github.io/styleguide/javascriptguide.xml)
+* [Airbnb JavaScript Style Guide](https://github.com/airbnb/javascript)
+* [Idiomatic.JS](https://github.com/rwaldron/idiomatic.js)
+* [StandardJS](https://standardjs.com/)
+* [Learn.javascript.ru](https://learn.javascript.ru/coding-style)
